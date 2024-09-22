@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Resume</title>
+  <!-- Include Tailwind CSS in your HTML head -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheets/build-resume.css">
+</head>
+
+<body>
+  <div class="navbar shadow-lg px-4 py-2">
+    <nav class="w-full h-auto flex justify-between items-center">
+      <div class="text-xl font-semibold text-gray-800">Resume Builder</div>
+ 
+      <div class="btn flex">
+        <div class="preview mr-10 px-4 border py-1 rounded-md flex items-center">
+          <a href="">
+            <button class="flex items-center">
+              <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              Preview
+            </button>
+          </a>
+        </div>
+        <div class="download mr-10 px-4 border py-1 rounded-md flex items-center">
+          <a href="">
+            <button class="flex items-center">
+              <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="flex flex-row mb-20">
+    <div class="w-2/4 px-4 py-8">
+      <div class="btn flex justify-end">
+        <button id="next-button"
+          class="Next block bg-gray-700 text-white px-4 py-2 rounded-lg mb-4 font-semibold  hover:bg-blue-300">Next</button>
+      </div>
+
+      <form action="/resume" method="post">
+        <div id="persnol-details" class="persnol-details">
+          <div class="details mb-8">
+            <h1 class="text-2xl font-bold">Persnol-details</h1>
+            <p class="font-light text-gray-400">Get started with the basics: your name and contact information.</p>
+          </div>
+          <div id="inputs" class="grid grid-cols-2 gap-4">
+            <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">First Name</h6>
+              <input id="firstName" name="firstname"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="First Name">
+            </label>
+  
+            <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Last Name</h6>
+              <input id="lastName" name="lastname"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Last Name">
+            </label>
+            <label for="MobileNo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Mobile Number</h6>
+              <input id="MobileNo" name="mobileno"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="number" placeholder="Mobile Number">
+            </label>
+            <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Address</h6>
+              <input id="address" name="address"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Address">
+            </label>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Email</h6>
+              <input id="email" name="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="email" placeholder="Email">
+            </label>
+            <label for="social-link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Social Media Link</h6>
+              <input id="social-link" name="social"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="link" placeholder="Linkdin/Github">
+            </label>
+          </div>
+        </div>
+        <div id="education-details" class="objective-education-details hidden">
+          <div class="details mb-8">
+            <h1 class="text-2xl font-bold">Objective</h1>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message</label>
+            <textarea id="message" rows="4" name="message"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 resize-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Example--->Recent graduate with a degree in Computer Science seeking an entry-level software development position to leverage coding skills and problem-solving abilities in a dynamic tech environment."></textarea>
+          </div>
+          <div class="Education">
+            <h1 class="text-2xl font-bold">Education</h1>
+          </div>
+          <div id="inputs" class="grid grid-cols-2 gap-4 mt-5">
+            <label for="collegename" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">12th College Name</h6>
+              <input id="collegename" name="collegename"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="College name">
+            </label>
+            <label for="course" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">Course finished years</h6>
+              <input id="course" name="course"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="course finished years Ex-2017-2019">
+            </label>
+            <label for="graduate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class=""> College Name</h6>
+              <input id="graduate" name="graduate"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="College name">
+            </label>
+            <label for="p-years" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">Passing Years</h6>
+              <input id="p-years" name="passyears"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="passing years Ex-2019-2022">
+            </label>
+  
+          </div>
+        </div>
+        <div id="skills" class="job-details hidden">
+          <div class="details mb-8">
+            <h1 class="text-2xl font-bold">Skills</h1>
+          </div>
+          <div id="inputs" class="grid grid-cols-2 gap-4">
+            <label for="T-skills" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">Technical Skills</h6>
+              <input id="T-skills" name="technialskills"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Ex:-> programming/project management/ Other.....">
+            </label>
+  
+            <label for="s-skills" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Soft Skills</h6>
+              <input id="s-skills" name="softskills"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Ex:->communication/problem-solving/other...">
+            </label>
+            <label for="f-language" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Frontend-Language</h6>
+              <input id="f-language" name="frontendLanguge"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Frontend-Language">
+            </label>
+            <label for="b-language" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Backend-Language</h6>
+              <input id="b-language" name="backendLanguage"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Backend-Language">
+            </label>
+            <label for="freamework" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Freamework</h6>
+              <input id="freamework" name="freamework"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="ex-telwind-css/express/ReactJs/other..">
+            </label>
+            <label for="database" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Database</h6>
+              <input id="database" name="database"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Ex:->mysql/sql/mongodb/other..">
+            </label>
+          </div>
+        </div>
+        <div id="certification-project" class="certification-project hidden">
+          <div class="details mb-8">
+            <h1 class="text-2xl font-bold">Certification</h1>
+            <p class="text-light text-gray-400">certification mention your internships and Other certification</p>
+          </div>
+          <div id="inputs" class="grid grid-cols-2 gap-4">
+            <label for="1st-certificate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="">Certificate</h6>
+              <input id="1st-certificate" name="Firststcertificate"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Company Name">
+            </label>
+  
+            <label for="I-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Did you ever date her?</h6>
+              <input id="I-date" name="idate"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Ex:->Dec2023-Jan2024">
+            </label>
+            <label for="project" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Mention Your Project</h6>
+              <input id="project" name="project"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Project Name">
+            </label>
+            <label for="2-project" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <h6 class="text-base font-semibold">Mention Your Project</h6>
+              <input id="2-project" name="secounProject"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                type="text" placeholder="Project Name">
+            </label>
+          </div>
+          <div class="Summary mt-10">
+            <label for="Summary" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Professional
+              Summary</label>
+            <textarea id="Summary" rows="5" name="summary"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 resize-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Example---> Highly motivated and detail-oriented recent graduate with a [Degree] in [Field] from [University]. Strong foundation in [relevant skills or knowledge areas], with practical experience gained through internships and academic projects. Excellent problem-solving abilities, strong communication skills, and a keen interest in [industry/field]. Eager to contribute to a dynamic team and grow professionally in a challenging role."></textarea>
+          </div>
+        </div>
+      </form>
+      <span id="back-button" class="mt-10 px-4 py-2 bg-gray-700 inline-block rounded-md text-white hover:bg-blue-300">
+        <button class="">Back</button>
+      </span>
+    </div>
+
+    <div id="scrollContainer" class="max-w-3xl mt-10 ml-5 bg-white shadow-lg rounded-lg p-6 px-4 ">
+      <div class="text-center mb-6">
+        <h1 id="fullName" class="text-2xl font-bold">GAUSPASHA CHOUDHARI</h1>
+        <p id="mobilenumber" class="text-sm text-gray-600">94035559450 ◊ Momin Galli Ausa Dist Latur</p>
+        <p class="text-sm text-gray-600">
+          <a href="mailto:gauschoudhary2001@gmail.com"
+            class="text-blue-500 hover:text-blue-700">gauschoudhary2001@gmail.com</a> ◊
+          <a href="https://www.linkedin.com/in/gous-choudhary-307834274/"
+            class="text-blue-500 hover:text-blue-700">LinkedIn</a> ◊
+          <a href="https://github.com/Gous3007" class="text-blue-500 hover:text-blue-700">GitHub</a>
+        </p>
+      </div>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">OBJECTIVE</h2>
+        <p class="mt-2 text-gray-700">To secure a web developer position where I can apply my technical skills and
+          creativity to build innovative solutions.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">EDUCATION</h2>
+        <div class="mt-2">
+          <p class="font-semibold">12th Science, Maharashtra state board</p>
+          <p class="text-sm italic text-gray-600">Expected 2019</p>
+          <p class="text-gray-700">Relevant Coursework: Computer, Mathematics, Physics Chemistry.</p>
+        </div>
+        <div class="mt-4">
+          <p class="font-semibold">Bachelor of Computer Science, Swami Ramanand Teerth Marathwada University</p>
+          <p class="text-sm italic text-gray-600">2019 - 2023</p>
+        </div>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">SKILLS</h2>
+        <div class="mt-2 grid grid-cols-2 gap-4">
+          <div>
+            <p class="font-semibold">Technical Skills</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Programming, Front End Development, Back End Development Project Management</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Soft Skills</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Problem solving, Communication, Teamwork, Time management</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Frontend-Languages</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Html, Css, JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Backend-Languages</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>NodeJs</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Framework</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>ReactJs, ExpressJs</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Database</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>MongoDB, MySQL</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Template Engine</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Ejs</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold">Other-Basic knowledge</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>C, Java</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">INTERNSHIP CERTIFICATION</h2>
+        <div class="mt-2">
+          <p class="font-semibold">Role Name: OctaNet Services Pvt Ltd</p>
+          <p class="text-sm italic text-gray-600">Dec 2023 - Jan 2024</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <li>Landing Pages Portfolio Website Create growth for Web Development Frontend Development.</li>
+            <li>Understanding backend development with technologies like Node.js, Express.js, could have been a focus,
+              allowing you to create server-side logic and APIs to support your frontend applications.</li>
+            <li>Learning how to work with databases such as MySQL, MongoDB.</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <p class="font-semibold">Role Name: CodeClause PVT LTD</p>
+          <p class="text-sm italic text-gray-600">403, Lane A-5, Nirwutti Nagar Vadgaon Bk-411041 Pune, India</p>
+          <p class="text-sm italic text-gray-600">Jan 2024 - Feb 2024</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <li>You'll learn how to create the visual and interactive parts of a website using HTML, CSS, and
+              JavaScript.</li>
+            <li>You'll delve into server-side programming languages like Node.js, to handle data management and server
+              operations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">PROJECTS</h2>
+        <div class="mt-2">
+          <p class="font-semibold">Insta Reels Downloader</p>
+          <p class="text-gray-700">If the user pastes the link of Insta's reels on my Insta downloader, it will get
+            direct download video. Using Languages ReactJs MongoDB</p>
+        </div>
+        <div class="mt-4">
+          <p class="font-semibold">Shopping Cart</p>
+          <p class="text-gray-700">Shopping Cart Project Using HTML, CSS, JAVASCRIPT.</p>
+        </div>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold border-b pb-1">PROFESSIONAL SUMMARY</h2>
+        <p class="mt-2 text-gray-700">Aspiring Computer Science graduate with a knack for problem-solving and a passion
+          for innovation. Proficient in JavaScript, ExpressJS, and NodeJs, eager to contribute to cutting-edge projects
+          and expand my skills in a dynamic environment. Strong team player with a drive for continuous learning and
+          growth.</p>
+        <p class="mt-2 text-gray-700">Possess excellent problem-solving skills and a strong willingness to adapt to new
+          challenges in the dynamic field of computer science.</p>
+      </section>
+    </div>
+
+    <footer class="fixed bottom-0 left-0 right-0 bg-gray-700 px-4 py-4">
+      <p class="text-center text-white">© 2024 StudentHelper.com. All rights reserved. Contact Us.</p>
+    </footer>
+
+  </div>
+</body>
+
+<script src="javascripts/resume-build.js"></script>
+</html>

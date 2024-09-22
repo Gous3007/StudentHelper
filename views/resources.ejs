@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300 h-screen w-full">
+    <div class="container h-auto">
+        <nav class="bg-white shadow-lg w-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                            <span class="font-semibold text-gray-800 text-lg">StudentHelper</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a href="#"
+                            class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">Home</a>
+                        <a href="#"
+                            class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">Services</a>
+                        <a href="#"
+                            class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">About</a>
+                        <a href="#"
+                            class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">Contact</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class="w-6 h-6 text-gray-500 hover:text-blue-600" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="w-full py-12 bg-gradient-to-r from-blue-400 to-purple-500">
+            <div class="container mx-auto px-4">
+                <div class="resources flex flex-col lg:flex-row gap-8">
+                    <!-- Interview Prep Card -->
+                    <section class="w-full lg:w-1/2 transform transition-all duration-500 hover:rotate-1 group">
+                        <div
+                            class="bg-white rounded-2xl shadow-2xl h-full relative z-10 transition-all duration-500 group-hover:shadow-3xl">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-500 rounded-2xl transform scale-[1.02] transition-all duration-500 -z-10 opacity-0 group-hover:opacity-100 group-hover:scale-105">
+                            </div>
+                            <h3
+                                class="text-3xl font-bold text-center py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-t-2xl">
+                                Interview Prep</h3>
+                            <div class="relative overflow-hidden">
+                                <img id="html-image"
+                                    src="https://res.cloudinary.com/drppaqhmd/image/authenticated/s--ttidTeJV--/v1719486189/images/wawrn9hzz3scwcyfh7on.png"
+                                    alt="Interview Question"
+                                    class="w-full h-96 object-cover bg-center transition-transform duration-500 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 flex items-center">
+                                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4">
+                                            </path>
+                                        </svg>
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-2xl font-semibold text-gray-800 mb-4 transition-all duration-300 group-hover:text-purple-600">
+                                    Frontend Interview Question</h2>
+                                <p id="html-paragrapgh"
+                                    class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-700">
+                                    Boost your interview prep with our curated frontend questions. Cover essential
+                                    topics like HTML, CSS, JavaScript, and popular frameworks. Practice regularly to ace
+                                    your next frontend developer interview!
+                                </p>
+                                <div class="flex justify-between items-center">
+                                    <button
+                                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:-translate-x-1 hover:shadow-md">
+                                        <svg class="w-6 h-6 inline-block mr-1" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                        Previous
+                                    </button>
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:translate-x-1 hover:shadow-md">
+                                        Next
+                                        <svg class="w-6 h-6 inline-block ml-1" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- YouTube Video Card -->
+                    <section class="w-full lg:w-1/2 transform transition-all duration-500 hover:-rotate-1 group">
+                        <div
+                            class="bg-white rounded-2xl shadow-2xl h-full relative z-10 transition-all duration-500 group-hover:shadow-3xl">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-red-500 rounded-2xl transform scale-[1.02] transition-all duration-500 -z-10 opacity-0 group-hover:opacity-100 group-hover:scale-105">
+                            </div>
+                            <h2 id="main-title"
+                                class="text-3xl font-bold text-center py-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-t-2xl">
+                                HTML Tutorial</h2>
+                            <div class="relative overflow-hidden">
+                                <video id="html-video"
+                                    class="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" 
+                                    controls loop muted preload="metadata"
+                                    poster="https://html.com/wp-content/uploads/html-hpg-featured-new.png">
+                                    <source
+                                        src="https://res.cloudinary.com/drppaqhmd/video/authenticated/s--_m4BlAjs--/v1719316064/videos/btkhy50hdk4nekvgdgnp.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                                    <button onclick="document.getElementById('html-video').play()"
+                                        class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 flex items-center">
+                                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        Watch Now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 id="video-title"
+                                    class="text-2xl font-semibold text-gray-800 mb-4 transition-all duration-300 group-hover:text-red-600">
+                                    HTML Basics for Beginners</h3>
+                                <p id="video-discription"
+                                    class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-gray-700">
+                                    This comprehensive tutorial covers the fundamentals of HTML. Learn how to structure
+                                    web pages, use different tags, and create engaging content for your websites.
+                                </p>
+                                <div class="flex items-center justify-between space-x-2">
+                                    <a href="https://www.youtube.com/watch?v=rklidcZ-aLU" target="_blank"
+                                        class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                                        Watch on YouTube
+                                    </a>
+                                    <div class="btn flex space-x-2">
+                                        <button
+                                            class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold p-2 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 19l-7-7 7-7" />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold p-2 rounded-full transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resources w-full py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <section class="w-full">
+                <div class="heading mb-8">
+                    <h1 class="text-4xl font-bold text-gray-800 text-center">Resources</h1>
+                    <p class="text-xl text-gray-600 text-center mt-2">Explore our curated collection of frontend
+                        development resources</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- HTML Resource -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="p-6">
+                            <h2 id="pdf-title" class="text-2xl font-semibold text-gray-800 mb-2">HTML Fundamentals</h2>
+                            <p id="pdf-discription" class="text-gray-600 mb-4">Master the basics of HTML5 and structure
+                                your web content like
+                                a pro.</p>
+                            <a id="pdf-link"
+                                href="https://res.cloudinary.com/drppaqhmd/image/authenticated/s--x-VmO0pr--/v1719245454/pdfs/a1dayzgmkjs9hrfhekol.pdf"
+                                target="_blank"
+                                class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300 ease-in-out">
+                                <svg class="w-4 h-4 inline-block mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                    </path>
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CSS Resource -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="p-6">
+                            <h2 id="pdf-title-2" class="text-2xl font-semibold text-gray-800 mb-2">CSS Mastery</h2>
+                            <p id="pdf-discription-2" class="text-gray-600 mb-4">Learn advanced CSS techniques to create
+                                stunning and
+                                responsive layouts.</p>
+                            <a id="pdf-link-2"
+                                href="https://res.cloudinary.com/drppaqhmd/image/authenticated/s--jQ53IdiT--/v1719246248/pdfs/uzi3k9eioaldt7y0vevl.pdf"
+                                target="_blank"
+                                class="inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300 ease-in-out">
+                                <svg class="w-4 h-4 inline-block mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                    </path>
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Resource -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-2">JavaScript Essentials</h2>
+                            <p class="text-gray-600 mb-4">Dive into modern JavaScript and unlock the power of
+                                interactive web applications.</p>
+                            <a href="#"
+                                class="inline-block bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition duration-300 ease-in-out">
+                                <svg class="w-4 h-4 inline-block mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                    </path>
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="javascripts/resources.js"></script>
+</body>
+
+</html>

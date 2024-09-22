@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-800 flex items-center justify-center min-h-screen">
+    <div class="container w-full max-w-md p-6 bg-white rounded-lg shadow-2xl">
+        <div class="relative">
+            <img class="rounded-lg brightness-50 w-full h-48 object-cover" src="images/studentHelperimg/login.avif" alt="Login Image">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 rounded-lg">
+                <h1 class="text-3xl font-mono">Login</h1>
+            </div>
+        </div>
+        <form action="/login" method="post" class="mt-6">
+            <div class="msg text-yellow-600 mt-2">
+                <% if(messages && messages.length > 0) { %>
+                    <p class="font-mono text-xl"><%= messages %></p>
+                <% } %>
+            </div>
+            <div class="mt-4">
+                <input class="w-full font-mono px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" placeholder="Email" name="email">
+            </div>
+            <div class="mt-4">
+                <input class="w-full font-mono px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" type="password" placeholder="Password" name="password">
+            </div>
+            <div class="mt-6">
+                <button class="w-full px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Login</button>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-gray-600">Ready to dive back in? Just a quick signin away to unlock a world of possibilities!</p>
+                <a class="text-indigo-600 font-bold mt-2 inline-block" href="/signup">Signup</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
